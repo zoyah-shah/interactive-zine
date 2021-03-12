@@ -86,7 +86,6 @@ p {
   width: 50%;
   height: fit-content;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -126,9 +125,7 @@ p {
   width: 100%;
   z-index: -1;
 
-  /*Fallback if gradeints don't work */
-  /* background: #e6306c; */
-  /*Linear gradient... */
+
   background: radial-gradient(at center, #62f727, #0906bb, #bb0669);
 }
 
