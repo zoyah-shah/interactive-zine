@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "Jet Brains Bold";
+  src: url("assets/JetBrainsMono-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Jet Brains Regular";
+  src: url("assets/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  /* position: relative; */
+  font-family: "Jet Brains Bold";
+  z-index: 99;
+  font-size: 10rem;
+  color: white;
+  /* top: 60vh;
+    padding: 1rem; */
+}
+
+h1:hover {
+  animation: shadow-pop-tl 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+}
+@keyframes shadow-pop-tl {
+  0% {
+    box-shadow: 0 0 white, 0 0 white, 0 0 white, 0 0 white, 0 0 white,
+      0 0 white, 0 0 white, 0 0 white;
+
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px -1px white, -2px -2px white, -3px -3px white,
+      -4px -4px white, -5px -5px white, -6px -6px white, -7px -7px white,
+      -8px -8px white;
+
+    transform: translateX(8px) translateY(8px);
+  }
+}
+
+.home {
+  position: relative;
+  z-index: 99;
+  top: -13vh;
+  left: 70vw;
+  width: fit-content;
+  /* padding: 1rem; */
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.title {
+  position: relative;
+  z-index: 99;
+  top: 12vh;
+  padding: 1rem;
+}
+
+h2 {
+  font-family: "Jet Brains Bold";
+  z-index: 99;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem;
+}
+
+.history {
+  position: relative;
+  top: 2rem;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Jet Brains Regular";
+  font-size: 1rem;
+  padding: 1rem;
+  color: white;
+  line-height: 2rem;
+}
+.column {
+  float: left;
+  width: 50%;
+  height: fit-content;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row2 {
+  position: relative;
+  top: 58vh;
+}
+
+.row3 {
+  position: relative;
+  top: 305vh;
+}
+.variations {
+  position: relative;
+  top: 310vh;
+  text-decoration: underline;
+  padding: 1rem;
+}
+.association {
+  position: relative;
+  top: 65vh;
+  text-decoration: underline;
+  padding: 1rem;
+}
+
+.radial-gradient {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  /*Fallback if gradeints don't work */
+  /* background: #e6306c; */
+  /*Linear gradient... */
+  background: radial-gradient(at center, #62f727, #0906bb, #bb0669);
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .home{
+    left: 1vw;
+    top: -4rem;
+  }
+  .title{
+    top: 18vh;
+
+    /* font-size: 6rem; */
+  }
+  h1{
+    font-size: 7rem;
+  }
+
+  .row2{
+    position: relative;
+    top: 275vh;
+  }
+  .association{
+    top: 280vh;
+  }
+
+  .variations{
+    top: 1220vh;
+  }
+  .row3{
+    position: relative;
+    top: 1220vh;
+  }
+}
